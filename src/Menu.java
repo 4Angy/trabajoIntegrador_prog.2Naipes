@@ -12,9 +12,9 @@ public class Menu {
         //menu
         do {
         System.out.println("\n¿Que quieres hacer?");
-        System.out.println("1) Barajar\n 2)Sacar una carta\n " +
+        System.out.println(" 1) Barajar\n 2)Sacar una carta\n " +
                 "3)Ver cantidad de cartas\n 4)Repartir \n" +
-                "5)Ver cartas repartidas \n 6)Ver cartas restantes \n7)Salir");
+                " 5)Ver cartas repartidas \n 6)Ver cartas restantes \n7)Jugar Mayor o Menor\n8)Salir");
         opcion = menu.nextInt();
 
             switch (opcion) {
@@ -46,6 +46,9 @@ public class Menu {
                     baraja.mostrarCartasDisponibles();
                     break;
                 case 7:
+                    //jugar
+                    baraja.partida();
+                case 8:
                     //salir
                     System.out.println("¡¡ Gracias por jugar !!");
                     break;
